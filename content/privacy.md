@@ -1,5 +1,5 @@
 ---
-title: "Privacy Policy"
+title: "سياسة الخصوصية"
 layout: "privacy"
 draft: false
 info: 

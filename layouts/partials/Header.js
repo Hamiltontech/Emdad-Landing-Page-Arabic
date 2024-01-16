@@ -24,15 +24,13 @@ const Header = () => {
   const { enable, label, link } = config.nav_button;
 
   return (
-    <header className="header" dir={router.locale === "ar" ? `rtl` : `ltr`}>
+    <header className="header" dir="rtl">
       <nav className="navbar mx-auto max-w-[1300px] px-4">
         {/* logo */}
         <div className="order-0 -mt-4">
-          {router.locale === "ar" ? (
+          
             <Logo src="/images/arabic-logo.png" />
-          ) : (
-            <Logo src={logo} />
-          )}
+         
         </div>
 
         {/* navbar toggler */}
@@ -70,7 +68,7 @@ const Header = () => {
                 {menu.hasChildren ? (
                   <li className="nav-item nav-dropdown group relative ">
                     <span className="nav-link inline-flex items-center">
-                      {router.locale === "ar" ? menu.arabic : menu.name}
+                      {menu.arabic }
                       <svg className="h-4 w-4 fill-current" viewBox="0 0 20 20">
                         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                       </svg>
@@ -99,7 +97,7 @@ const Header = () => {
                           router.asPath === menu.url ? "nav-link-active" : ""
                         }`}
                       >
-                        {router.locale === "ar" ? menu.arabic : menu.name}
+                        {menu.arabic}
                       </Link>
                     </li>
                   </>
@@ -109,8 +107,7 @@ const Header = () => {
 
             <button>
               <Link 
-              href={router.asPath}
-              locale={router.locale === "en-US" ? "ar" : "en-US"}>
+              href="https://emdad-landing-page.vercel.app/">
                 <button className="duration-150 ease-in-out hover:text-secondary">
                <GrLanguage />
                </button></Link>

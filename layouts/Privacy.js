@@ -32,7 +32,7 @@ axios.get("https://strapi-155887-0.cloudclusters.net/api/privacies").then((res)=
     <div className="container pt-12 ">
       {markdownify(title, "h1", "text-center font-normal text-white")}
      <h4 className='mt-10'>
-      Personal Information: 
+      معلومات شخصية
       </h4>
 
   <div class="markdown text-white text-justify">

@@ -1,11 +1,10 @@
 ---
-title: "Contact Us"
+title: "تواصل معنا"
 layout: "contact"
 draft: false
 info: 
   title: Why you should contact us!
-  description: Have a question or need more information? Fill in the form and our team will be happy to assist you!
-
+  description: لديك سؤال أو تحتاج إلى مزيد من المعلومات؟ املأ النموذج وسيسعد فريقنا بمساعدتك!
   contacts: 
     - "phone: +966 xx xxxx  xx"
     - "Mail: [info@emdadplatform.sa](mailto:info@emdadplatform.sa)"

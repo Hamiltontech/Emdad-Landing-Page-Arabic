@@ -1,5 +1,5 @@
 ---
-title: Frequently Asked Questions
+title: أسئة متكررة
 layout: faq
 draft: false
 faqs:

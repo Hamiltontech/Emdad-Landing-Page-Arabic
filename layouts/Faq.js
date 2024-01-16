@@ -22,7 +22,7 @@ axios.get("https://strapi-155887-0.cloudclusters.net/api/faqs").then((res)=>{
     <section className="section bg-primary">
      
       <div className="container pt-12 text-white">
-        {markdownify("Frequently Asked Questions", "h1", "text-center font-normal text-white")}
+        {markdownify("اسئلة متكررة", "h1", "text-center font-normal text-white")}
         <div className="section row -mt-6 rounded-xl">
           {faq?.map((faq, index) => (
             <div key={index} className="col-12 mt-6 md:col-6 items-stretch flex ">

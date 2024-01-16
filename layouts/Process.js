@@ -13,7 +13,7 @@ function Process() {
         translateX: 0,
       },
       {
-        translateX: "-300vw",
+        translateX: "300vw",
         ease: "none",
         duration: 1,
         scrollTrigger: {
@@ -52,7 +52,7 @@ function Process() {
   }
 
   return (
-    <section className="scroll-section-outer bg-gray-900">
+    <section className="scroll-section-outer bg-gray-900" dir="rtl">
       <div ref={triggerRef}>
         <div ref={sectionRef} className="scroll-section-inner">
           {/* first */}

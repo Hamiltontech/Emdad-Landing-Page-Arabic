@@ -20,7 +20,7 @@ const Base = ({
   const { base_url } = config.site;
   const router = useRouter();
   return (
-    <>
+    <div dir="rtl">
       <Head>
         {/* title */}
         <title>
@@ -94,7 +94,7 @@ const Base = ({
       {/* main site */}
       <main>{children}</main>
       <Footer arabic={arabic} setArabic={setArabic} />
-    </>
+    </div>
   );
 };
 
