@@ -79,11 +79,11 @@ const PostSingle = ({ data, postID, slug }) => {
                   </>
                 ))} */}
 
-
+{/* 
 <div className="text-white">
 <Markdown>{data?.attributes?.Content}</Markdown>
-</div>
-          
+</div> */}
+        {data?.attributes?.Content}  
 
                 
               </div>
