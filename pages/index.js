@@ -34,7 +34,7 @@ const Home = ({ frontmatter }) => {
 
   useEffect(() => {
     axios
-      .get("https://strapi-155887-0.cloudclusters.net/api/statistics")
+      .get("https://strapi-155887-0.cloudclusters.net/api/statistics?locale=ar")
       .then((res) => {
         setStats(res.data.data);
       })
@@ -42,7 +42,7 @@ const Home = ({ frontmatter }) => {
         console.log(err);
       });
     axios
-      .get("https://strapi-155887-0.cloudclusters.net/api/features")
+      .get("https://strapi-155887-0.cloudclusters.net/api/features?locale=ar")
       .then((res) => {
         setFeatures(res.data.data);
       })

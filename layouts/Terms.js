@@ -12,7 +12,7 @@ const Terms = ({data}) => {
     const { title, info } = frontmatter;
 
     useEffect(()=>{
-axios.get("https://strapi-155887-0.cloudclusters.net/api/terms").then((res)=>{
+axios.get("https://strapi-155887-0.cloudclusters.net/api/terms?locale=ar").then((res)=>{
     setPrivacy(res.data.data)
     console.log(res)
 }).catch((eror)=>{

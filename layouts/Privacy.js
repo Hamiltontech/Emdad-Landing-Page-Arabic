@@ -12,7 +12,7 @@ const Privacy = ({data}) => {
     const { title, info } = frontmatter;
 
     useEffect(()=>{
-axios.get("https://strapi-155887-0.cloudclusters.net/api/privacies").then((res)=>{
+axios.get("https://strapi-155887-0.cloudclusters.net/api/privacies?locale=ar").then((res)=>{
     setPrivacy(res.data.data)
     console.log(res)
 }).catch((eror)=>{

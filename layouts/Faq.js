@@ -11,7 +11,7 @@ function Faq() {
   const [faq, setFaq] = useState([])
 
   useEffect(()=>{
-axios.get("https://strapi-155887-0.cloudclusters.net/api/faqs").then((res)=>{
+axios.get("https://strapi-155887-0.cloudclusters.net/api/faqs?locale=ar").then((res)=>{
   setFaq(res.data.data)
 }).catch((err)=>{
   console.log(err)

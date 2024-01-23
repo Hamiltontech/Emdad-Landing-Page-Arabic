@@ -19,7 +19,7 @@ function Pricing({ data }) {
 
   const [team, setTeam] = useState([])
   useEffect(()=>{
-    axios.get("https://strapi-155887-0.cloudclusters.net/api/teams?populate=*").then((res)=>{
+    axios.get("https://strapi-155887-0.cloudclusters.net/api/teams?populate=*?locale=ar").then((res)=>{
       setTeam(res.data.data)
     }).catch((err)=>{
       console.log(err)

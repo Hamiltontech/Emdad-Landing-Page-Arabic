@@ -3,7 +3,8 @@ import shortcodes from "@shortcodes/all";
 import { MDXRemote } from "next-mdx-remote";
 import Image from "next/image";
 import Base from "./Baseof";
-
+import parse, { htmlToDOM } from "html-react-parser";
+import Markdown from "markdown-to-jsx";
 import { BsPinterest } from "react-icons/bs";
 import { RiWhatsappFill, RiMessengerFill } from "react-icons/ri";
 import {
@@ -44,7 +45,7 @@ const PostSingle = ({ data, postID, slug }) => {
 
   // let { description, title, image } = frontmatter;
   // description = description ? description : content.slice(0, 120);
-  console.log(data);
+
   let title = data?.attributes?.Title;
   let image =
     "https://strapi-155887-0.cloudclusters.net" +
@@ -71,12 +72,20 @@ const PostSingle = ({ data, postID, slug }) => {
                 {/* <MDXRemote {...data?.attributes?.Abstract} components={shortcodes} /> */}
                 <h4 className="text-white"> {data?.attributes?.Abstract}</h4>
 
-                {data?.attributes?.Content.map((item) => (
+                {/* {data?.attributes?.Content.map((item) => (
                   <>
                     {item?.children[0]?.text}
                     <br></br>
                   </>
-                ))}
+                ))} */}
+
+
+<div className="text-white">
+<Markdown>{data?.attributes?.Content}</Markdown>
+</div>
+          
+
+                
               </div>
             </article>
 
