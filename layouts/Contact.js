@@ -40,8 +40,12 @@ const Contact = ({ data }) => {
     <section className="section bg-primary">
       {success ? 
        <div className="container  h-screen text-white grid justify-center text-center place-items-center">
-     <div>  <h1 className="text-white">! شكرا لك</h1>
-       <p >... سيقوم فريقنا بالرد عليك في أقرب وقت</p></div>
+     <div>  <h1 className="text-white">
+     شكرا لك!
+     </h1>
+       <p>
+       سيقوم فريقنا بالرد عليك في أقرب وقت...
+           </p></div>
         </div>
         :
 
