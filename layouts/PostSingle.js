@@ -40,6 +40,8 @@ const PostSingle = ({ data, postID, slug }) => {
     }, 2000);
   }
 
+
+
   const love =
     "https://strapi-155887-0.cloudclusters.net/post/" + slug 
 

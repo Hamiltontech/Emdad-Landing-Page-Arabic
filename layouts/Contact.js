@@ -85,7 +85,7 @@ const Contact = ({ data }) => {
                 />
               </div>
               <button type="submit" className="btn btn-primary bg-[#ef7756]">
-                Send Now
+                أرسل الآن
               </button>
             </form>
           </div>

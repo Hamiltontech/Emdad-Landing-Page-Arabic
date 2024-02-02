@@ -12,7 +12,7 @@ function About() {
   const [team, setTeam] = useState([]);
   useEffect(() => {
     axios
-      .get("https://strapi-155887-0.cloudclusters.net/api/teams?populate=*?locale=ar")
+      .get("https://strapi-155887-0.cloudclusters.net/api/teams?populate=*&locale=ar")
       .then((res) => {
         setTeam(res.data.data);
       })
