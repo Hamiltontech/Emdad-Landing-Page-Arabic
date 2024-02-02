@@ -83,11 +83,11 @@ workflow:
 
 # call_to_action
 call_to_action:
-  title: Ready to get started?
-  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur.
+  title: أطلق العنان لإمكانيات نموك!
+  content: انضم الينا الان لتكون جزءا من الخيار الأول في قطاع سلاسل الإمداد داخل وخارج المملكة.
   image: '/images/cta.png'
   button:
     enable: true
-    label: "Contact Us"
+    label: "انضم الآن!"
     link: "/contact"
 ---

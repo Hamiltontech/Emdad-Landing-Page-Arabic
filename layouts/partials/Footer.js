@@ -15,7 +15,7 @@ const Footer = () => {
   const { copyright, footer_content, arabic_footer_content, arabic_copyright } = config.params;
   const { footer } = menu;
   return (
-    <footer className="section pb-0 bg-primary text-white" dir="rtl">
+    <footer className="section pb-0 bg-[#111827] text-white" dir="rtl">
       <div className="container">
         {/* footer menu */}
         <div className="row ">
@@ -49,12 +49,13 @@ const Footer = () => {
             </Link>
             { markdownify(arabic_footer_content, "p", "mt-3 mb-6")}
           
-            <Social source={social} className="social-icons mb-8" />
+            <Social source={social} className="social-icons mb-8 " />
           </div>
         </div>
       </div>
         {/* copyright */}
-        <div className="  py-6 bg-[#111827]">
+        <hr className="text-white/10 mx-40"/>
+        <div className="  py-6 bg-gray-900">
           {markdownify(arabic_copyright, "p", "text-sm text-center")}
           
         </div>

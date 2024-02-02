@@ -16,7 +16,7 @@
   },
   "fonts": {
     "font_family": {
-      "primary": "Montserrat:wght@300",
+      "primary": "Noto+Kufi+Arabic:wght@200",
       "primary_type": "sans-serif"
     },
     "font_size": {

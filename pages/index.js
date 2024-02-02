@@ -99,30 +99,19 @@ const Home = ({ frontmatter }) => {
                 </p>
                 
                   <>
-                    <a
-                      href="#"
-                      class="bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:focus:ring-primary-900 mr-3 inline-flex items-center justify-center rounded-lg px-5 py-3 text-center text-base font-medium text-white focus:ring-4"
-                    >
-                      <svg
-                        class="-mr-1 ml-2 h-5 w-5"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                      ابدأ الآن
-                    </a>
 
                     <a
                       href="#"
                       class=" inline-flex items-center justify-center rounded-full border border-gray-300 px-5 py-3 text-center text-base font-medium  text-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
                     >
                       تواصل معنا
+                    </a>
+                    <a
+                      href="#"
+                      class="mt-4 bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:focus:ring-primary-900 mr-3 inline-flex items-center justify-center rounded-lg px-5 py-3 text-center text-base font-medium text-white focus:ring-4"
+                    >
+                  
+                      ابدأ الآن
                     </a>
                   </>
                 
@@ -141,6 +130,10 @@ const Home = ({ frontmatter }) => {
                 {" "}
                 لماذا تختار منصة إمداد الرقمية؟
               </h2>
+              <p className="text-white">
+              توفر منصة إمداد الرقمية حلولًا ذكية لتمكين المنشآت من الاستفادة من التحول الرقمي عبر رقمنة وتنظيم عمليات سلسلة الإمداد، أيًا كان مجال أو حجم المنشأة، بالإمكان تخصيص خدمات منصة إمداد الرقمية لتلائم احتياجاتها وأهدافها.
+
+              </p>
           
           </div>
           <div className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -166,11 +159,10 @@ const Home = ({ frontmatter }) => {
             <div class="mx-auto max-w-2xl lg:max-w-none">
               <div class="space-y-4 text-center">
                 <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                  Trusted by creators worldwide
-                </h2>
+                التكنولوجيا بأسرها في منصة واحدة
+                                </h2>
                 <p class="text-lg leading-8 text-gray-300">
-                  We can help you grow your audience and your business, no
-                  matter the size.
+                يمكننا مساعدتك في تنمية جمهورك وعملك، بغض النظر عن حجمه.
                 </p>
               </div>
               <dl class="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-lg text-center sm:grid-cols-2 lg:grid-cols-7">

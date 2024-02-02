@@ -66,7 +66,7 @@ const Contact = ({ data }) => {
                   name="name"
                   id="name"
                   type="text"
-                  placeholder="Name"
+                  placeholder="الاسم"
                   onChange={(e) => setName(e.target.value)}
                   required
                 />
@@ -77,7 +77,7 @@ const Contact = ({ data }) => {
                   name="email"
                   id="email"
                   type="email"
-                  placeholder="Your email"
+                  placeholder="البريد الالكتروني"
                   onChange={(e) => setEmail(e.target.value)}
                   required
                 />
@@ -88,7 +88,7 @@ const Contact = ({ data }) => {
                   name="subject"
                   id="subject"
                   type="text"
-                  placeholder="Subject"
+                  placeholder="الموضوع"
                   onChange={(e) => setSubject(e.target.value)}
                   required
                 />
@@ -98,7 +98,7 @@ const Contact = ({ data }) => {
                   className="form-textarea w-full rounded-md"
                   rows="7"
                   id="message"
-                  placeholder="Your message"
+                  placeholder="رسالتك"
                   onChange={(e) => setMessage(e.target.value)}
                 />
               </div>

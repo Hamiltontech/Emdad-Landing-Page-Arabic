@@ -65,7 +65,7 @@ const Social = ({ source, className }) => {
     website,
   } = source;
   return (
-    <ul className={className}>
+    <ul className={className} dir="ltr">
       {facebook && (
         <li className="inline-block">
           <a
