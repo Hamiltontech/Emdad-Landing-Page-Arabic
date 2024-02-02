@@ -54,7 +54,7 @@ const PostSingle = ({ data, postID, slug }) => {
     data?.attributes?.Image?.data?.attributes?.url;
   return (
     <Base title={title}>
-      <section className="section bg-primary text-white">
+      <section className="section bg-primary text-white" dir="rtl">
         <div className="container pt-12">
           <div className="row">
             <article className="col-12 mx-auto text-center md:col-8">
@@ -68,9 +68,9 @@ const PostSingle = ({ data, postID, slug }) => {
                   className="rounded-lg"
                 />
               )}
-              {markdownify(title, "h1", "h2 mb-6 mt-6 text-left")}
+              {markdownify(title, "h1", "h2 mb-6 mt-6 text-right")}
 
-              <div className="content mb-16 text-left text-white">
+              <div className="content mb-16 text-right text-white" dir="rtl">
                 {/* <MDXRemote {...data?.attributes?.Abstract} components={shortcodes} /> */}
                 <h4 className="text-white"> {data?.attributes?.Abstract}</h4>
 
@@ -91,7 +91,7 @@ const PostSingle = ({ data, postID, slug }) => {
               </div>
             </article>
 
-            <p className="text-center text-sm"> Share Article Via..</p>
+            <p className="text-center text-sm"> شارك المقال عبر:</p>
             <div className="flex  container justify-center">
       <div className="flex p-1 lg:my-1 mx-1 hover:scale-110">
         <EmailShareButton

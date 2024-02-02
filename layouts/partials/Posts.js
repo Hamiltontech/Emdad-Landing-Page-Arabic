@@ -42,7 +42,7 @@ const Posts = ({ posts }) => {
               href={`/post/${posts[0]?.attributes?.Slug}`}
               rel=""
             >
-              Read More
+              اقرأ المزيد
             </Link>
           </div>
         </div>
