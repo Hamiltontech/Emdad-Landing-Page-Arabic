@@ -10,6 +10,7 @@ import { useRouter } from "next/router";
 
 function About() {
   const [team, setTeam] = useState([]);
+  const [visionMission, setVisionMission] = useState([])
   useEffect(() => {
     axios
       .get("https://strapi-155887-0.cloudclusters.net/api/teams?populate=*&locale=ar")
@@ -19,6 +20,12 @@ function About() {
       .catch((err) => {
         console.log(err);
       });
+      axios.get("https://strapi-155887-0.cloudclusters.net/api/vision-missions?locale=ar").then((res)=>{
+        setVisionMission(res.data.data[0].attributes)
+        console.log(res.data.data[0].attributes)
+      }).catch((err)=>{
+        console.log(err)
+      })
   }, []);
 
   return (
@@ -53,11 +60,7 @@ function About() {
               <div className="mt-4">
                 <h4>رؤيتنا</h4>
                 <p className="mt-3 text-white">
-                  " أن تصبح منصة إمداد الرقمية الخيار الأول في قطاع سلاسل
-                  الإمداد داخل وخارج المملكة. تسعى إمداد لتأسيس وإدارة أكبر
-                  محطات الشحن، وتقديم أجود خدمات النقل والتخزين، والشراكة مع
-                  أفضل الموردين، بالإضافة إلى توفير أحسن الحلول والخدمات
-                  اللوجستية في المنطقة."
+                {visionMission?.Vision}
                 </p>
               </div>
             </div>
@@ -65,12 +68,7 @@ function About() {
               <div className="mt-4">
                 <h4>رسالتنا</h4>
                 <p className="mt-3 text-white">
-                  "تسعى منصة إمداد الرقمية لتكون في مصاف الحلول التقنية المبتكرة
-                  لتدعيم النمو الاقتصادي في المملكة العربية السعودية، وتمتد
-                  رؤيتنا لنصبح الخيار الأفضل في مجال اللوجستيات وسلاسل الإمداد
-                  داخل وخارج المملكة. نواجه تحديات السوق بثقة، و ننطلق من
-                  إيماننا يالقدرات البشرية وإمكانات البحث والتطوير لتقديم خدمات
-                  فريدة وملائمة لاحتياجات العملاء. "
+                 {visionMission?.Mission}
                 </p>
               </div>
             </div>
