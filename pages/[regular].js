@@ -7,14 +7,16 @@ import Pricing from "@layouts/Pricing";
 import About from "@layouts/About";
 import { getRegularPage, getSinglePage } from "@lib/contentParser";
 import Post from "./post/[slug]";
-import Privacy from "@layouts/Privacy"
+import Privacy from "@layouts/Privacy";
 import Terms from "@layouts/Terms";
 import { useState } from "react";
 import Process from "@layouts/Process";
+import Services from "@layouts/Services";
 
 // for all regular pages
 const RegularPages = ({ data }) => {
-  const { title, meta_title, description, image, noindex, canonical, layout} = data.frontmatter;
+  const { title, meta_title, description, image, noindex, canonical, layout } =
+    data.frontmatter;
   const { content } = data;
 
   return (
@@ -26,12 +28,12 @@ const RegularPages = ({ data }) => {
       noindex={noindex}
       canonical={canonical}
     >
-
-
       {layout === "404" ? (
         <NotFound data={data} />
       ) : layout === "contact" ? (
-        <Contact data={data}/>
+        <Contact data={data} />
+      ): layout === "services" ? (
+        <Services data={data} />
       ) : layout === "process" ? (
         <Process />
       ) : layout === "post" ? (
@@ -72,7 +74,6 @@ export const getStaticPaths = async () => {
 
 // for regular page data
 export const getStaticProps = async ({ params }) => {
-
   const { regular } = params;
   const regularPage = await getRegularPage(regular);
 
