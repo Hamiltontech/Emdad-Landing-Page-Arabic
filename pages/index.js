@@ -105,19 +105,19 @@ const Home = ({ frontmatter }) => {
                 
                   <>
 
-                    <a
+                    <Link
                       href="/about"
                       class="btn btn-primary inline-flex items-center justify-center text-sm"
                     >
                       من نحن
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       href="/contact"
                       class="transition ease-in-out duration-200 border-secondary mt-4 hover:border-b hover:border-secondary   mr-3 inline-flex items-center justify-center px-5 py-3 text-center text-base font-medium text-white"
                     >
                   
                       ابدأ الآن
-                    </a>
+                    </Link>
                   </>
                 
               </div>
